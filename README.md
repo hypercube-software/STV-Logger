@@ -6,9 +6,9 @@ I always wanted to have a nice logger in C++ like we have in Java. So here it is
 ## Features
 
 - You can format your log message in the same way as a `printf`
-- You can pass a **std::string** to **%s**
-- You can pass **bool** to **%s** it will display "true" or "false"
-- You can pass **std::thread::id** to **%lld** (it will be converted to **uint64_t** which is **unsigned long long**)
+- You can pass a **`std::string`** to **`%s`**
+- You can pass **`bool`** to **`%s`** it will display "true" or "false"
+- You can pass **`std::thread::id`** to **`%lld`** (it will be converted to **uint64_t** which is **unsigned long long**)
 - The log format is hard coded in `LogManager::writeLog` but you can easily change it.
 
 ## Example
