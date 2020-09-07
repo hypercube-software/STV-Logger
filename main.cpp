@@ -9,7 +9,7 @@ namespace HypercubeSoftware {
             m_logger->error("Error receiving packet: %d", 100);
         }
     private:
-        std::unique_ptr<Logger> m_logger = LogManager::Instance().getLogger("PlugProcessor");
+        std::unique_ptr<Logger> m_logger = LogManager::Instance().getLogger("MyClass");
 
     };
 }
