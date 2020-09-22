@@ -7,7 +7,7 @@
 [1.4 Purge](#14-purge)  
   
   
-[2 Variadic C++ templates](#2-variadic-c--templates)  
+[2 Variadic C++ templates](#2-variadic-c-templates)  
 
 
 
