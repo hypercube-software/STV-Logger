@@ -1,21 +1,9 @@
 # STV-Logger
-**Table of content**
-
-[1.1 Features](#11-features)  
-[1.2 Example](#12-example)  
-[1.3 Initialization](#13-initialization)  
-[1.4 Purge](#14-purge)  
-  
-  
-[2 Variadic C++ templates](#2-variadic-c--templates)  
-
-
-
 Strongly Typed Variadic Logger in C++17
 
 I always wanted to have a nice logger in C++ like we have in Java. So here it is! This project is based on CMake. You must use it to generate the visual studio project in the **bin** folder. The log is generated in this folder.
 
-## 1.1 Features
+## Features
 
 - You can format your log message in the same way as a `printf`
 - You can pass a **`std::string`** to **`%s`**
@@ -23,7 +11,7 @@ I always wanted to have a nice logger in C++ like we have in Java. So here it is
 - You can pass **`std::thread::id`** to **`%lld`** (it will be converted to **uint64_t** which is **unsigned long long**)
 - The log format is hard coded in `LogManager::writeLog` but you can easily change it.
 
-## 1.2 Example
+## Example
 
 input:
 
@@ -39,7 +27,7 @@ output:
 
 The log contains a time stamp, the current log name, the thread id and the level.
 
-## 1.3 Initialization
+## Initialization
 
 You must write those two lines before using the logger
 
@@ -54,11 +42,11 @@ In any class you will use a logger with a name of your choice (the name of the c
  std::unique_ptr<Logger> m_logger = LogManager::Instance().getLogger("MyClass");
 ```
 
-## 1.4 Purge
+## Purge
 
 This implementation DELETE old logs on each start.  See `LogManager::open` to change this if you don't like it.
 
-# 2 Variadic C++ templates
+# Variadic C++ templates
 
 The interesting part of this code is related to the use of variadic recursive c++ template. 
 
