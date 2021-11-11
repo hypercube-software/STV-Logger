@@ -1,16 +1,12 @@
 # STV-Logger
 **Table of content**
 
-[1.1 Features](#11-features)  
-[1.2 Example](#12-example)  
-[1.3 Initialization](#13-initialization)  
-[1.4 Purge](#14-purge)  
-  
-  
+[1 STV-Logger](#stv-logger)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Features](#11-features)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Example](#12-example)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Initialization](#13-initialization)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Purge](#14-purge)  
 [2 Variadic C++ templates](#2-variadic-c-templates)  
-
-
-
 Strongly Typed Variadic Logger in C++17
 
 I always wanted to have a nice logger in C++ like we have in Java. So here it is! This project is based on CMake. You must use it to generate the visual studio project in the **bin** folder. The log is generated in this folder.
